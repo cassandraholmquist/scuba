@@ -11,11 +11,8 @@
 @implementation Animal
 
 -(id)initWithPicture:(NSString *)picture andName:(NSString *)name andFamily:(nonnull NSString *)family andSize:(NSString *)size {
-    self = [super init];
+    self = [super initWithPicture:picture andName:name andFamily:family];
     if(self) {
-        self.picture = picture;
-        self.name = name;
-        self.family = family;
         self.size = size;
     }
     return self;
